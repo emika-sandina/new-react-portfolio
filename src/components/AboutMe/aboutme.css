@@ -1,0 +1,51 @@
+
+
+.main-title {
+    font-size: 35px;
+    color: rgb(177, 177, 114);
+}
+
+.main-title:hover {
+    transition: 0.3s ease-in;
+    color: #c9a877;
+}
+
+
+.about-me {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    line-height: 1.5;
+}
+
+p:hover {
+    color: #c9a877;
+    transition: 0.3s ease-in-out
+}
+
+.about-text {
+    margin-top: 13%;
+    margin-left: 25px;
+}
+
+
+.about-image {
+    width: 350px;
+    padding: 10px;
+    border-radius: 20px;
+    filter: saturate(0%);
+}
+
+.about-image:hover {
+    filter: saturate(100%);
+    transition: 0.3s ease-in;
+    transform: scale(1.05);
+}
+
+h1 {
+    text-align: center;
+}

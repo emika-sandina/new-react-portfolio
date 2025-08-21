@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1e1c1c;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: center;
+}
+
+.navlinks a {
+    padding: 15px;
+    color: white;
+}
+
+.navicon {
+    width: 100px;
+    border-radius: 50%;
+}
