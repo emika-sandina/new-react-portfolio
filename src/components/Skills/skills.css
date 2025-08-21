@@ -6,13 +6,19 @@
 
 .card {
     border: 1px solid white;
-    padding: 75px;
+    padding: 70px;
     background-color: #1e1c1c;
     border-radius: 20px;
 }
 
 .icon {
     font-size: 80px;
+    
+}
+
+.icon:hover {
+    transition: 0.3s ease-in;
+    transform: scale(1.05);
 }
 
 h4 {
@@ -24,11 +30,11 @@ h4 {
     text-align: left;
     margin-left: 150px;
     margin-top: 30px;
-    color: rgb(219, 213, 130);
     font-size: 25px;
+    color: rgb(177, 177, 114);
 }
 
 h1 {
-    color: rgb(219, 176, 82);
+    color: rgb(177, 177, 114);
     margin-top: 30px;
 }

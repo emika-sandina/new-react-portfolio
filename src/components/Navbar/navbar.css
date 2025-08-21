@@ -4,15 +4,20 @@
     justify-content: space-between;
     background-color: #1e1c1c;
     color: white;
-    padding: 20px;
+    padding: 20px 40px;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin-bottom: 50px;
+    box-sizing: border-box;
+    z-index: 1000;
 }
 
 .navlinks {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .navlinks a {
@@ -24,7 +29,6 @@
 .navlinks a:hover {
     color: #ce8c40;
 }
-
 
 .navicon {
     width: 100px;
