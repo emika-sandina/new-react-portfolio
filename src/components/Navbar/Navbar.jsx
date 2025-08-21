@@ -13,6 +13,7 @@ function Navbar() {
             <a href="#about-me">About Me</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
+            <button>Contact Me</button>
         </div>
         
       </nav>

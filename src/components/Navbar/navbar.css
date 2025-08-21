@@ -18,7 +18,13 @@
 .navlinks a {
     padding: 15px;
     color: white;
+    text-decoration: none;
 }
+
+.navlinks a:hover {
+    color: #ce8c40;
+}
+
 
 .navicon {
     width: 100px;
