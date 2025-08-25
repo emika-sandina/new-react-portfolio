@@ -37,7 +37,7 @@ function Skills() {
 
     return(
         <>
-        <h1>Skills</h1>
+        <h1 id='skills'>Skills</h1>
         <div className="btn-container">
             <button onClick={()=>setSelectedCategory('All')}>All</button>
             <button onClick={()=>setSelectedCategory('Programming Languages')}>Programming Languages</button>

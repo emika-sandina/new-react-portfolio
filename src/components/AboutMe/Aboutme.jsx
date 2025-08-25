@@ -8,7 +8,9 @@ function Aboutme() {
       <br></br>
       <br></br>
       <br></br>
-      <h1 className="main-title">About Me</h1>
+      <br></br>
+      <br></br>
+      <h1 className="main-title" id='about-me'>About Me</h1>
       <div className="container">
         <div className="about-me">
           
