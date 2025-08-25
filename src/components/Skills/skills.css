@@ -5,7 +5,7 @@
 }
 
 .card {
-    padding: 50px;
+    padding: 2%;
     background-color: #1e1c1c;
     border-radius: 20px;
 }
@@ -47,7 +47,7 @@ h1 {
 }
 
 .btn-container button {
-    width: 300px;
+    width: 250px;
     margin-left: 10px;
     background-color: #212121;
     border: none ;
