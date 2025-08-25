@@ -1,68 +1,59 @@
 import './skills.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faReact, faJs, faPython, faJava, faFigma, faNodeJs} from '@fortawesome/free-brands-svg-icons';
+import { useState } from 'react';
+
+const skillsData = [
+    {name:'Python', icon:faPython, category:'Programming Languages'},
+    { name: 'Java', icon: faJava, category: 'Programming Languages' },
+    { name: 'JavaScript', icon: faJs, category: 'Programming Languages' },
+    { name: 'HTML', icon: faHtml5, category: 'Markup Languages' },
+    { name: 'CSS', icon: faCss3Alt, category: 'Markup Languages' },
+    { name: 'Figma', icon: faFigma, category: 'Front End Design' },
+    { name: 'React', icon: faReact, category: 'Frameworks' },
+]
+
+const categories = [
+    'All',
+    'Programming Languages',
+    'Markup Languages',
+    'Frameworks',
+    'Front End Design'
+]
+
 function Skills() {
+    const [selectedCategory, setSelectedCategory] = useState("All");
+    let filteredSkills;
+
+    if (selectedCategory === "All") {
+        filteredSkills = skillsData;
+    }
+
+    else {
+        filteredSkills = skillsData.filter(skill => skill.category === selectedCategory);
+    }
+    
+
+
     return(
         <>
         <h1>Skills</h1>
-        <h3 className="skill">Programming Languages</h3> 
-        <div className="container">
-            <div className="card">
-                
-                <p className='icon'><FontAwesomeIcon icon={faPython} /></p>
-                <h4>Python</h4>
-            </div>
-
-            <div className="card">
-                
-                <p className='icon'><FontAwesomeIcon icon={faJava} /></p>
-                <h4>Java</h4>
-
-            </div>
-
-            <div className="card">
-                
-                <p className='icon'><FontAwesomeIcon icon={faJs}/></p>
-                <h4>JavaScript</h4>
-            </div>
+        <div className="btn-container">
+            <button onClick={()=>setSelectedCategory('All')}>All</button>
+            <button onClick={()=>setSelectedCategory('Programming Languages')}>Programming Languages</button>
+            <button onClick={()=>setSelectedCategory('Markup Languages')}>Markup Languages</button>
+            <button onClick={()=>setSelectedCategory('Frameworks')}>Frameworks</button>
+            <button onClick={()=>setSelectedCategory('Front End Design')}>Front End Design</button>
         </div>
 
-        <h3 className="skill">Front End Design and Implementation</h3> 
         <div className="container">
-            <div className="card">
-                
-                <p className='icon'><FontAwesomeIcon icon={faHtml5} /></p>
-                <h4>HTML</h4>
-            </div>
-
-            <div className="card">
-                
-                <p className='icon'><FontAwesomeIcon icon={faCss3Alt} /></p>
-                <h4>CSS</h4>
-
-            </div>
-
-            <div className="card">
-                
-                <p className='icon'><FontAwesomeIcon icon={faFigma}/></p>
-                <h4>Figma</h4>
-            </div>
-        </div>
-
-        <h3 className="skill">Frameworks</h3> 
-        <div className="container">
-
-            <div className="card">
-                
-                <p className='icon'><FontAwesomeIcon icon={faReact} /></p>
-                <h4>React JS</h4>
-
-            </div>
-
-            <div className="card">
-                <p className='icon'><FontAwesomeIcon icon={faNodeJs}/></p>
-                <h4>Node.JS</h4>
-            </div>
+            {
+                filteredSkills.map(skill => (
+                    <div className="card" key={skill.name}>
+                        <p className="icon"><FontAwesomeIcon icon={skill.icon}/></p>
+                        <h4>{skill.name}</h4>
+                    </div>
+                ))}
         </div>
 
         
@@ -71,3 +62,5 @@ function Skills() {
 }
 
 export default Skills;
+
+///

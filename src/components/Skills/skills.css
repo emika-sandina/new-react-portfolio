@@ -5,8 +5,7 @@
 }
 
 .card {
-    border: 1px solid white;
-    padding: 70px;
+    padding: 50px;
     background-color: #1e1c1c;
     border-radius: 20px;
 }
@@ -37,4 +36,26 @@ h4 {
 h1 {
     color: rgb(177, 177, 114);
     margin-top: 30px;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn-container button {
+    width: 300px;
+    margin-left: 10px;
+    background-color: #212121;
+    border: none ;
+    color: darkorange;
+    cursor: pointer;
+}
+
+.btn-container button:hover {
+    background-color: #4e4e4e;
+}
+
+.btn-container button.active {
+    border: 2px solid darkorange;
+    background-color: #333;
 }
