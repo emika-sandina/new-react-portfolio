@@ -10,6 +10,10 @@
     border-radius: 20px;
 }
 
+.card:hover {
+    border: 1px solid darkorange;
+}
+
 .icon {
     font-size: 80px;
     
@@ -53,9 +57,6 @@ h1 {
 
 .btn-container button:hover {
     background-color: #4e4e4e;
+    border: 2px solid darkorange;
 }
 
-.btn-container button.active {
-    border: 2px solid darkorange;
-    background-color: #333;
-}

@@ -38,17 +38,6 @@ function Contact() {
       <div className="container">
         <div className="contact">
           <div className="contact-col">
-            <ul>
-                <li><h1>Contact Me</h1></li>
-              <li><img src={mail_icon} className="icons"/>emika.20231380@iit.ac.lk</li>
-              <li><img src={phone_icon} className="icons"/>075 463 8288</li>
-              <li><img src={location_icon} className="icons"/>
-                37/21, 2nd Lane, Lionel Jayasinghe Mawatha, Panagoda, Godagama
-              </li>
-            </ul>
-          </div>
-
-          <div className="contact-col">
             <form onSubmit={onSubmit}>
                 <label>Your Name</label>
                 <br/>
