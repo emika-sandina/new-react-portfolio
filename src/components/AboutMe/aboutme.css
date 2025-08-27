@@ -49,3 +49,27 @@ p:hover {
 h1 {
     text-align: center;
 }
+
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 1.3rem;
+  }
+  .about-me {
+    flex-direction: column;
+    width: 98vw;
+    align-items: center;
+  }
+  .about-image {
+    width: 90vw;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  .about-text {
+    margin-top: 16px;
+    margin-left: 0;
+    text-align: center;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
