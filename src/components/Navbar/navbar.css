@@ -24,6 +24,7 @@
 .navlinks a {
     padding: 15px;
     color: white;
+    font-weight: bold;
     text-decoration: none;
 }
 
