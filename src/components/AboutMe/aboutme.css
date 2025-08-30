@@ -54,6 +54,7 @@ h1 {
   .main-title {
     font-size: 1.3rem;
   }
+
   .about-me {
     flex-direction: column;
     width: 98vw;
@@ -62,7 +63,7 @@ h1 {
   .about-image {
     width: 90vw;
     max-width: 250px;
-    margin: 0 auto;
+    margin-top: 20px;
   }
   .about-text {
     margin-top: 16px;
@@ -70,6 +71,9 @@ h1 {
     text-align: center;
   }
   p {
-    font-size: 1rem;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 70vw;
+    margin-bottom: 20px;
   }
 }

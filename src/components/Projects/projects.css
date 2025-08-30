@@ -70,24 +70,36 @@ button a {
     padding: 0;
   }
   .project-card {
-    width: 90vw;
+    width: 80vw;
     padding: 14px;
+    margin-top: 16px;
     margin-bottom: 16px;
   }
+
+  .project-card p {
+    text-align: center;
+  }
+
+  .project-card .info {
+    font-size: 15px;
+    text-align: center;
+    margin-left: 20px;
+  }
+
   .project-img {
     width: 90vw;
     max-width: 200px;
     margin-left: 0;
   }
   .technologies p {
-    font-size: 32px;
+    font-size: 50px;
   }
   h3 {
     font-size: 1.1rem;
   }
   .btn {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 18px;
+    width: 35vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }

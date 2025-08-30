@@ -18,7 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 13px;
 }
 
 .navlinks a {
@@ -38,25 +38,23 @@
 
 @media (max-width: 600px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 12px 8px;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    border-radius: 0 0 16px 16px;
-  }
+    padding: 20px;
+    top:30px;
+    left: 20px;
+    width: 90vw;
+    border-radius: 20px;
+}
   .navlinks {
-    flex-direction: column;
-    width: 100%;
-    gap: 0;
+    width: 50%;
+    gap: 15;
   }
   .navlinks a, .navlinks button {
     padding: 10px 0;
-    width: 100%;
-    text-align: left;
+    font-size: 14px;
+    text-align: center;
   }
-  .navicon {
-    width: 60px;
+
+  .navicon h1{
+    font-size: 20px;
   }
 }

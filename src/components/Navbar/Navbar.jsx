@@ -10,10 +10,10 @@ function Navbar() {
         </div>
 
         <div className="navlinks">
-            <a href="#about-me">About Me</a>
+            <a href="#about-me">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#contact"><button href='#contact'>Contact Me</button></a>
+            <a href="#contact">Contact</a>
             
         </div>
         

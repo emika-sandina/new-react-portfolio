@@ -45,15 +45,14 @@ button:hover {
 
 @media (max-width: 600px) {
   .container {
-    width: 98vw;
-    min-width: unset;
-    padding: 12px 4px;
+    padding: 20px;
     margin-top: 12px;
     border-radius: 12px;
   }
   body {
     font-size: 15px;
   }
+  
   h1 {
     font-size: 1.5rem;
   }
