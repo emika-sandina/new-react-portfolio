@@ -1,61 +1,62 @@
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #212121;
-    color: white;
-    padding: 20px 40px;
-    position: fixed;
-    top:30px;
-    left: 100px;
-    width: 87%;
-    box-sizing: border-box;
-    z-index: 1000;
-    border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #212121;
+  color: white;
+  padding: 20px 40px;
+  position: fixed;
+  top: 30px;
+  left: 100px;
+  width: 87%;
+  box-sizing: border-box;
+  z-index: 1000;
+  border-radius: 20px;
 }
 
 .navlinks {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
 }
 
 .navlinks a {
-    padding: 15px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .navlinks a:hover {
-    color: #ce8c40;
+  color: #ce8c40;
 }
 
 .navicon {
-    width: 100px;
-    border-radius: 50%;
+  width: 100px;
+  border-radius: 50%;
 }
 
 @media (max-width: 600px) {
   .navbar {
     padding: 20px;
-    top:30px;
+    top: 30px;
     left: 20px;
     width: 90vw;
     border-radius: 20px;
-}
+  }
   .navlinks {
     width: 50%;
     gap: 15;
   }
-  .navlinks a, .navlinks button {
+  .navlinks a,
+  .navlinks button {
     padding: 10px 0;
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
   }
 
-  .navicon h1{
-    font-size: 20px;
+  .nav-icon h1 {
+    font-size: 15px;
   }
 }
