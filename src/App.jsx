@@ -5,6 +5,7 @@ import Aboutme from './components/AboutMe/Aboutme';
 import Skills from './components/Skills/Skills';
 import Contact from './components/Contact/Contact';
 import Projects from './components/Projects/Projects';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     <Skills/>
     <Projects/>
     <Contact/>
+    <Footer/>
     </>
   )
 }
